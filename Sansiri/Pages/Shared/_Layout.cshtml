@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sansiri</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Sansiri.styles.css" asp-append-version="true" />
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <!-- Slick Carousel theme CSS (optional) -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand logo" asp-area="" asp-page="/Index"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark" asp-area="" asp-page="/Index">บ้านเดี่ยว</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark" asp-area="" asp-page="">บ้านแฝด</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark" asp-area="" asp-page="">คอนโดมิเนียม</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark" asp-area="" asp-page="">ทาวน์โฮม</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner/banner1.jpg" class="d-block w-100" alt="banner1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner/banner2.jpg" class="d-block w-100" alt="banner2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner/banner3.jpg" class="d-block w-100" alt="banner3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="content">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- Project -->
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <ul style="list-style-type: none;">
+                        <li><h1><a href="#">บ้านเดี่ยว</a></h1></li>
+                        <li><h1><a href="#">บ้านแฝด</a></h1></li>
+                        <li><h1><a href="#">ทาวน์โฮม</a></h1></li>
+                        <li><h1><a href="#">คอนโดมิเนียม</a></h1></li>
+                        <li><h1><a href="#">โปรโมชัน</a></h1></li>
+                        <li>&nbsp;</li>
+                        <li><h1><a href="#">โครงการพร้อมอยู่</a></h1></li>
+                        <li><h1><a href="#">ความคืบหน้าโครงการ</a></h1></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <h1>แบรนด์</h1>
+                    <h2><a href="#">แบรนด์บ้านเดี่ยว ทั้งหมด <i class="bi bi-chevron-right"></i></a></h2>
+                    <ul class="_2col">
+                        <li><a href="#">บ้านแสนสิริ</a></li>
+                        <li><a href="#">บูก้าน</a></li>
+                        <li><a href="#">นาราสิริ</a></li>
+                        <li><a href="#">เศรษฐสิริ</a></li>
+                        <li><a href="#">บุราสิริ</a></li>
+                        <li><a href="#">ฮาบิเทีย</a></li>
+                        <li><a href="#">สราญสิริ</a></li>
+                        <li><a href="#">คณาสิริ</a></li>
+                        <li><a href="#">อณาสิริ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <h1>&nbsp;</h1>
+                    <h2><a href="#">แบรนด์ทาวน์โฮม ทั้งหมด <i class="bi bi-chevron-right"></i></a></h2>
+                    <ul class="_2col">
+                        <li><a href="#">ไทเกอร์ เลน</a></li>
+                        <li><a href="#">DEMI</a></li>
+                        <li><a href="#">สิริ สแควร์</a></li>
+                        <li><a href="#">สิริ อเวนิว</a></li>
+                        <li><a href="#">1517 นิมมาน</a></li>
+                        <li><a href="#">ทาวน์ อเวนิว</a></li>
+                        <li><a href="#">อณาสิริ</a></li>
+                        <li><a href="#">สิริ เพลส</a></li>
+                        <li><a href="#">เมททาวน์</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <h1>&nbsp;</h1>
+                    <h2><a href="#">แบรนด์คอนโดมิเนียม ทั้งหมด <i class="bi bi-chevron-right"></i></a></h2>
+                    <ul class="_2col">
+                        <li><a href="#">98 Wireless</a></li>
+                        <li><a href="#">KHUN by yoo</a></li>
+                        <li><a href="#">เดอะ โมนูเมนต์</a></li>
+                        <li><a href="#">เฮาส์</a></li>
+                        <li><a href="#">เอ็กซ์ที</a></li>
+                        <li><a href="#">เดอะ ไลน์</a></li>
+                        <li><a href="#">เอ็กซ์ที</a></li>
+                        <li><a href="#">ลา ฮาบานา</a></li>
+                        <li><a href="#">ลา คาซิตา</a></li>
+                        <li><a href="#">ดีคอนโด</a></li>
+                        <li><a href="#">The Muve</a></li>
+                        <li><a href="#">คอนโดมี</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="row">
+                <h1><a href="#">รวมโครงการทำเลดี ราคาเด่น</a></h1>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <h2><a href="#">บ้านเดี่ยว</a></h2>
+                    <ul class="_2col">
+                        <li><a href="#">บ้านปิ่นเกล้า-เพชรเกษม</a></li>
+                        <li><a href="#">บ้านประชาอุทิศ-สุขสวัสดิ์-พระราม 3</a></li>
+                        <li><a href="#">บ้านกรุงเทพกรีฑา-พัฒนาการ</a></li>
+                        <li><a href="#">บ้านศาลายา-บางใหญ่</a></li>
+                        <li><a href="#">บ้านพระราม 2</a></li>
+                        <li><a href="#">บ้านงามวงศ์วาน-ประชาชื่น</a></li>
+                        <li><a href="#">บ้านลำลูกกา-สะพานใหม่</a></li>
+                        <li><a href="#">บ้านราชพฤกษ์-พระราม 5</a></li>
+                        <li><a href="#">บ้านติวานนท์-แจ้งวัฒนะ</a></li>
+                        <li><a href="#">บ้านรังสิต-ปทุมธานี</a></li>
+                        <li><a href="#">บ้านชัยพฤกษ์</a></li>
+                        <li><a href="#">บ้านและทาวน์โฮมต่างจังหวัด</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <h2>ทาวน์โฮม</h2>
+                    <ul class="_2col">
+                        <li>ทาวน์โฮม สาธุประดิษฐ์</li>
+                        <li>ทาวน์โฮม สาทร</li>
+                        <li>ทาวน์โฮม พระราม 3</li>
+                        <li>ทาวน์โฮม ราชพฤกษ์</li>
+                        <li>ทาวน์โฮม ราชพฤกษ์</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <h2>คอนโดมิเนียม</h2>
+                    <ul class="_2col">
+                        <li>คอนโดพญาไท-ราชเทวี</li>
+                        <li>คอนโดทองหล่อ-สุขุมวิท</li>
+                        <li>คอนโดพระราม 9-ห้วยขวาง</li>
+                        <li>คอนโดหมอชิต-พหลฯ</li>
+                        <li>คอนโดติดรถไฟฟ้า BTS - MRT</li>
+                        <li>คอนโดต่างจังหวัด</li>
+                        <li>คอนโดน่าลงทุน</li>
+                        <li>คอนโดไม่เกิน 3 ล้าน</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Information -->
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <h1>รวมสาระน่ารู้</h1>
+                    <ul>
+                        <li><a href="#">รวมแบบบ้าน</a></li>
+                        <li><a href="#">คู่มือซื้อบ้านและลงทุนอสังหาฯ</a></li>
+                        <li><a href="#">แสนสิริ บล็อก</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <h1>เกี่ยวกับองค์กร</h1>
+                    <ul>
+                        <li><a href="#">รู้จักแสนสิริ</a></li>
+                        <li><a href="#">เพื่อชีวิตที่ยั่งยืน</a></li>
+                        <li><a href="#">ผู้ลงทุนสัมพันธ์</a></li>
+                        <li><a href="#">ข่าวสาร</a></li>
+                        <li><a href="#">แสนสิริ ไลฟ์สไตล์</a></li>
+                        <li><a href="#">บริการจากแสนสิริ</a></li>
+                        <li><a href="#">การร่วมทุนทางธุรกิจ</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <h1>ติดต่อ</h1>
+                    <ul>
+                        <li><a href="#">ติดต่อแสนสิริ</a></li>
+                        <li><a href="#">ร่วมงานกับแสนสิริ</a></li>
+                    </ul>
+                    <br />
+                    <h1>สนใจทำธุรกิจกับเรา</h1>
+                    <ul>
+                        <li><a href="#">เสนอขายที่ดิน</a></li>
+                        <li><a href="#">เสนอขายฝากที่ดิน</a></li>
+                        <li><a href="#">เสนอผู้รับเหมา/เสนอขายสินค้า</a></li>
+                        <li><a href="#">สมัครเป็นเอเจนท์</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <h1>ติดตามแสนสิริ โซเชียล เน็ตเวิร์ก</h1>
+                    <p>เพื่อติดต่อกับเรา และแชร์ความหลงใหลในแบรนด์ผลิตภัณฑ์และบริการของแสนสิริ</p>
+                    <ul class="social">
+                        <li><h1><a href="https://www.facebook.com/sansirifamily" target="_blank" title="facebook"><i class="bi bi-facebook"></i></a></h1></li>
+                        <li><h1><a href="https://twitter.com/SansiriPLC" target="_blank" title="twitter"><i class="bi bi-twitter-x"></i></a></h1></li>
+                        <li><h1><a href="https://www.instagram.com/sansiriplc/" target="_blank" title="instagram"><i class="bi bi-instagram"></i></a></h1></li>
+                        <li><h1><a href="https://www.youtube.com/user/sansiritv" target="_blank" title="youtube"><i class="bi bi-youtube"></i></a></h1></li>
+                        <li><h1><a href="https://line.me/R/ti/p/%40sansiriplc" target="_blank" title="line"><i class="bi bi-line"></i></a></h1></li>
+                        <li><h1><a href="https://www.sansiri.com/wechat-qrcore.html" target="_blank" title="wechat"><i class="bi bi-wechat"></i></a></h1></li>
+                        <li><h1><a href="https://blog.sansiri.com/" target="_blank" class="ga-footer-social s-b">blog</a></h1></li>
+                    </ul>
+                    <a class="btn btn-news" href="#" role="button"><i class="bi bi-envelope"></i>&nbsp;รับข่าวสารและสิทธิพิเศษ</a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-7 col-xl-7">COPYRIGHT &copy; 2019. SANSIRI PUBLIC CO.,LTD ALL RIGHTS RESERVED.</div>
+                <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 text-end"><a href="#">นโยบายความเป็นส่วนตัว</a> | <a href="#">ผังเว็บไซต์</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,228 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+    <!-- Search -->
+    <div class="row justify-content-center searchbar">
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <h1>ค้นหาโครงการ</h1>
+            <input type="text" placeholder="พิมพ์ชื่อโครงการ หรือทำเลที่คุณสนใจ" />
+        </div>
+    </div>
+
+    <div class="shortcut">
+        <h4>ทางลัดพบบ้านที่ใช่ใน คลิก! เดียว</h4>
+        <div class="row m-5">
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3"><img src="../img/project/single-house/anasiri-ayutthaya2.jpg" class="img-fluid rounded" /></div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3"><img src="../img/project/townhome/siri-place-bangna-suvarnabhumi.jpg" class="img-fluid rounded" /></div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3"><img src="../img/project/condo/dcondo-air.jpg" class="img-fluid rounded" /></div>
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3"><img src="../img/project/single-house/anasiri-ayutthaya2.jpg" class="img-fluid rounded" /></div>
+        </div>
+        <ul>
+            <li><a href="#" class="booking">ออนไลน์บุ๊คกิ้ง</a></li>
+            <li><a href="#">บ้านแฝด</a></li>
+            <li><a href="#">โปรโมชัน</a></li>
+            <li><a href="#">ทำเลน่าสนใจ</a></li>
+            <li><a href="#">ทำเลต่างจังหวัด</a></li>
+            <li><a href="#">แบบบ้าน</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Recommended Project -->
+<div class="recommended-project">
+    <h2 class="fw-bold">แนะนำโครงการ</h2>
+    <h5>เลือกโครงการบ้านที่ใช่ ตอบโจทย์ทุกไลฟ์สไตล์ของคุณ</h5>
+
+    <div class="slider-wrapper">
+        <div class="recommended-project-slider">
+            <div class="card">
+                <img src="../img/project/ready-move/siri-place-don-mueng-songprapha.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <div class="tag" style="background:#01654d;">โครงการพร้อมอยู่</div>
+                    <div class="name">สิริ เพลส<br />ดอนเมือง-สรงประภา</div>
+                    <div class="h-line-project" style="background:#e23785"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/project/condo/hay-huahin.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <div class="tag" style="background:#f94701;">เปิดจองออนไลน์ <i class="bi bi-chevron-right"></i></div>
+                    <div class="name">เฮย์<br />หัวหิน</div>
+                    <div class="h-line-project" style="background:#2a3a91"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/project/ready-move/anasiri-rama-2-wongwaen.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <div class="tag" style="background:#1d4e9d;">โครงการใหม่</div>
+                    <div class="name">อณาสิริ<br />พระราม 2 - วงแหวน</div>
+                    <div class="h-line-project" style="background:#009def"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/project/condo/dcondo-reef.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <div class="tag" style="background:#1d4e9d;">โครงการใหม่</div>
+                    <div class="name">ดีคอนโด รีฟ<br />ภูเก็ต</div>
+                    <div class="h-line-project" style="background:#e35000"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/project/condo/thebase-phetchaburi-thonglor.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <div class="tag" style="background:#f94701;">เปิดจองออนไลน์ <i class="bi bi-chevron-right"></i></div>
+                    <div class="name">ดีคอนโด รีฟ<br />ภูเก็ต</div>
+                    <div class="h-line-project" style="background:#5dbe00"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recommended Location -->
+<div class="recommended-location">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-xl-4">
+            <h2 class="fw-bold">แนะนำทำเลเด่นทั่วประเทศ</h2>
+            <div class="h-line"></div>
+            <h5 class="fw-bold">ทำเลนี้ดีอย่างไร..พบคำตอบเพื่อการเลือกบ้านที่ใช่โดนใจคุณ</h5>
+            <p>ส่องศักยภาพทำเลน่าอยู่ ทั่วกรุงเทพ ปริมณฑล และต่างจังหวัด หัวเมืองต่างๆ</p><br />
+            <div class="dropdown">
+                <button class="btn btn-location dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    เลือกทำเลที่คุณสนใจ
+                </button>
+                @*  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                </ul>*@
+            </div>
+        </div>
+        <div class="col-lg-5 col-xl-4 text-end">
+            <h1 class="fw-bold">
+                <u>คอนโดต่างจังหวัด</u><br />
+                เป็นที่<span style="color:#0052b5">ต้องการของตลาด</span><br />
+                อยู่เองก็ดี ตากอากาศก็ได้&nbsp;<i class="bi bi-tree-fill"></i><br />
+                <span style="color:#fd7953">ลงทุนที่คุ้มค่า</span> ส่วนกลาง<br />
+                ตอบโจทย์ทุกไลฟ์สไตล์&nbsp;<i class="bi bi-bag-fill"></i>
+            </h1>
+        </div>
+    </div>
+</div>
+
+<!-- Promotion -->
+<div class="promotion">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-xl-4">
+            <h2 class="fw-bold">โปรโมชัน</h2>
+            <div class="h-line"></div>
+            <span>ให้คุณได้บ้านถูกใจ พร้อมข้อเสนอดีที่สุด!</span>
+        </div>
+        <div class="col-lg-5 col-xl-4">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/project/single-house/anasiri-ayutthaya2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">ได้กับได้ เฉพาะ 21-22 ม.ค. นี้ได้ทอง 20 บาท</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/project/townhome/siri-place-bangna-suvarnabhumi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">จองง่าย จ่ายคล่อง พบยูนิตพิเศษ ราคาสุดคุ้ม</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/project/condo/dcondo-air.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">ลดเต็มที่ฟรีเป็นแสน โปรโค้ดดดี ที่อนนไลน์บุ๊คกิ๊ง</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/project/condo/dcondo-air.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">ลดเต็มที่ฟรีเป็นแสน โปรโค้ดดดี ที่อนนไลน์บุ๊คกิ๊ง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Luxury Collection -->
+<div class="text-center my-4">
+    <img src="../img/luxury-collection.png" class="img-fluid" />
+</div>
+
+<!-- Made For Life -->
+<div class="made-for-life">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5 p-5">
+            <h2 class="fw-bold" style="color:#0053B5">YOU are MADE FOR LIFE</h2><br />
+            <h4 class="fw-bold">ที่แสนสิริ ”คุณ” คือ แรงบันดาลใจของเรา</h4><br />
+            <p>
+                สิ่งที่คุณชอบ ผู้คนที่คุณรัก หรืออะไรก็ตามที่มีความหมาย ทุกเรื่องที่เกี่ยวกับ ”คุณ”<br />
+                ได้กลายมาเห็นจุดเริ่มต้นในการคิด และสร้างสรรค์ที่อยู่อาศัยให้ลงตัวกับไลฟ์สไตล์และ<br />
+                การใช้ชิวิตไปพร้อมๆ กับการสร้างสังคมที่ดีอย่างยั่งยืน ทั้งหมดก็เพื่อให้ คุณและครอบครัว<br />
+                ที่ไม่ว่าจะอยู่ในบ้าน หรือนอกบ้าน สามารถมีความสุขได้อย่างแท้จริง
+            </p>
+            <p>
+                ทุกคนต่างก็มี ”ใครสักคน” ที่เป็นเหตุผลให้ทำสิ่งดีๆ<br />
+                แสนสิริก็เช่นกัน ”คุณ” จะเป็นเหตุผลให้เราทำสิ่งดีๆ<br />
+                อยู่เสมอ ทั้งในวันนี้ และตลอดไป
+            </p><br />
+            <div class="row p-0 mb-5">
+                <div class="col-lg-3 text-center" style="color:pink">ไม่ว่า <b>คุณ</b> จะเป็นแบบไหน<br /><b>คุณ</b> คือสิ่งสำคัญที่สุด<br />ในการสร้างสิ่งดีๆ</div>
+                <div class="col-lg-9"><img src="../img/logo/made-for-life.png" class="img-fluid" /></div>
+            </div>
+            <button class="btn btn-detail">ดูรายละเอียด&nbsp;<i class="bi bi-chevron-right"></i></button>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-7">
+            <img src="../img/made-for-life.png" class="img-fluid w-100" />
+        </div>
+    </div>
+</div>
+
+<!-- Blog -->
+<div class="blog">
+    <div class="row justify-content-center">
+        <div class="col-md-11 col-lg-9 col-xl-8 text-center">
+            <h2 class="fw-bold">SANSIRI CONTENT HUB</h2>
+            <h5>รวมเรื่องน่ารู้ เพื่อคนอยากมีบ้าน</h5>
+        </div>
+    </div>
+
+    <div class="container blog-content">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-xl-5">
+                <h5 class="fw-bold">”คู่มืออสังหาริมทรัพย์” ยอดนิยม</h5>
+                <img src="../img/blog/blog1.png" class="img-fluid mt-2 mb-2" />
+                <p><b>อัพเดทล่าสุด อัตราดอกเบี้ย สินเชื่อบ้าน-คอนโด ปี 2566</b><br /><a href="">อ่านเพิ่มเติม&nbsp;<i class="bi bi-chevron-right"></i></a></p>
+            </div>
+            <div class="col-lg-3 col-xl-3">
+                <img src="../img/blog/blog2.png" class="img-fluid" />
+                <h5 class="fw-bold"><a href="" style="color:#013168">คู่มือซื้อบ้านและลงทุนอสังหาฯ<i class="bi bi-arrow-right-circle-fill float-end"></i></a></h5>
+                <hr style="border: 2px solid" />
+                <p><b>5 สิ่งจำเป็นที่ต้องเตรียมก่อนคิดที่จะซื้อบ้าน</b><br /><a href="">อ่านเพิ่มเติม &nbsp;<i class="bi bi-chevron-right"></i></a></p><hr />
+                <p><b>5 สิ่งจำเป็นที่ต้องเตรียมก่อนคิดที่จะซื้อบ้าน</b><br /><a href="">อ่านเพิ่มเติม &nbsp;<i class="bi bi-chevron-right"></i></a></p>
+            </div>
+            <div class="col-lg-3 col-xl-3">
+                <img src="../img/blog/blog3.png" class="img-fluid" />
+                <h5 class="fw-bold"><a href="" style="color:#013168">รีวิวโครงการและทำเล<i class="bi bi-arrow-right-circle-fill float-end"></i></a></h5>
+                <hr style="border: 2px solid" />
+                <p><b>5 สิ่งจำเป็นที่ต้องเตรียมก่อนคิดที่จะซื้อบ้าน</b><br /><a href="">อ่านเพิ่มเติม &nbsp;<i class="bi bi-chevron-right"></i></a></p><hr />
+                <p><b>5 สิ่งจำเป็นที่ต้องเตรียมก่อนคิดที่จะซื้อบ้าน</b><br /><a href="">อ่านเพิ่มเติม &nbsp;<i class="bi bi-chevron-right"></i></a></p>
+            </div>
+        </div>
+    </div>
+</div>

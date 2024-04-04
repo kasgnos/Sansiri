@@ -1,0 +1,258 @@
+/*html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}*/
+
+/*html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}*/
+
+/*html, body {
+    font-size: 10pt;
+}*/
+
+header .logo {
+    background-image: url(https://sansiri-com-frontend.s3.ap-southeast-1.amazonaws.com/assets/img/logo-sansiri-black-th.svg);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 23px;
+    display: block;
+}
+
+.content {
+    line-height: 1.15;
+}
+
+    .content a {
+        text-decoration: none;
+    }
+
+.searchbar {
+    margin: 50px auto;
+    text-align: center;
+}
+
+    .searchbar input {
+        width: 100%;
+        padding: 0.4em 6.3em 0.4em 4em;
+        background-image: url(../img/search.svg);
+        background-repeat: no-repeat;
+        background-size: 23px auto;
+        background-position: 1.2em 50%;
+        border: 1px solid #d9dde2;
+        border-radius: 25px;
+    }
+
+.shortcut {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+    .shortcut ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .shortcut ul li {
+            display: inline-block;
+        }
+
+            .shortcut ul li a {
+                display: inline-block;
+                padding: 10px 20px;
+                margin: 0 20px 10px 0;
+                border: 2px solid #003168;
+                border-radius: 20px;
+                color: #000;
+            }
+
+                .shortcut ul li a:hover {
+                    background-color: #003168;
+                    color: #fff;
+                }
+
+                .shortcut ul li a.booking {
+                    background-color: #ea5236;
+                    color: #fff;
+                    border: 0;
+                }
+
+.recommended-project {
+    background-color: #f3f6ff;
+    padding: 25px;
+    text-align: center;
+}
+
+    .recommended-project .card {
+        width: 300px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+        .recommended-project .card img {
+            border-radius: 10px 10px 0 0;
+        }
+
+    .recommended-project .card-body {
+        position: relative;
+        padding: 40px 30px 10px 25px;
+    }
+
+    .recommended-project .tag {
+        position: absolute;
+        top: -20px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 10pt;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .recommended-project .name {
+        text-align: left;
+        font-weight: bold;
+        font-size: 14pt;
+    }
+
+.recommended-location {
+    background-color: #f2efe8;
+    padding: 50px 0;
+}
+
+    .recommended-location .btn-location {
+        width: 100%;
+        background: #fff;
+        border-radius: 20px;
+        text-align: left;
+    }
+
+.promotion {
+    background-color: #f3f6ff;
+    padding: 50px 0;
+}
+
+    .promotion .slider-wrapper {
+        background-color: #fff;
+        border-radius: 20px;
+    }
+
+.made-for-life {
+    padding-left: 100px;
+}
+
+.blog {
+    background-color: #f4f5f9;
+    padding: 50px 0;
+}
+
+.blog-content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 20px;
+}
+
+    footer .row {
+        padding: 20px 0;
+    }
+
+        footer .row:not(:last-child) {
+            border-bottom: 1px solid #333;
+        }
+
+    footer h1 {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    footer h2 {
+        font-size: 12pt;
+        font-weight: bold;
+    }
+
+    footer a {
+        color: #fff !important;
+        text-decoration: none;
+    }
+
+    footer ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        footer ul._2col {
+            -webkit-columns: 2;
+        }
+
+        footer ul.social {
+            margin: 15px 0;
+        }
+
+            footer ul.social li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+    footer .btn-news {
+        border: 1px solid #fff;
+    }
+
+.h-line {
+    height: 4px;
+    width: 120px;
+    margin: 15px 0;
+    background: #000;
+}
+
+.h-line-project {
+    height: 4px;
+    width: 50px;
+    margin: 15px 0;
+}
+
+.btn-detail {
+    background: #fff;
+    color: #0053B5;
+    border: 1px solid #0053B5;
+}
+
+    .btn-detail:hover {
+        background: #0053B5;
+        color: #fff;
+    }
+
+.slider-wrapper {
+    padding: 20px 40px;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #808080 !important;
+}
